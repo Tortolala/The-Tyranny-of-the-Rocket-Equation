@@ -4,9 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int mass = 12;
-        int fuel = (mass / 3) - 2;
+        int fuel = calculateFuel(12);
         System.out.println("The fuel required is: " + fuel);
 
     }
+
+    public static int calculateFuel(Integer mass) {
+
+        return (mass / 3) - 2;
+
+    }
+
 }
